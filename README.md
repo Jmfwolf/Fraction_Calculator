@@ -6,6 +6,7 @@ Command Line tool to perform operations on fractions as an input and produce a f
 - Technologies
 - Testing
 - Setup
+- Future Plans
 
 ## Introduction:
 This project is my first time developing in Python. The intent is to meet the requirements of the
@@ -29,3 +30,6 @@ Begin in the same directory as the file
   + Enter operand: \*, /, +, - (multiply, divide, add, subtract)
   + Enter second number in the same format as the first
   + The program will display: =Solution
+
+## Future Plans:
+The python versioning issue would be remedied if you used something like docker that made your env consistent.
