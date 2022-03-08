@@ -69,7 +69,8 @@ def calculate(a, b, c):
             elif b == '-':
                 return subs(reduce(first.numerator, first.denominator), reduce(second.numerator, second.denominator))
             elif b == '*':
-                return multiply(reduce(first.numerator, first.denominator), reduce(second.numerator, second.denominator))
+                return multiply(reduce(first.numerator, first.denominator),
+                                reduce(second.numerator, second.denominator))
             elif b == '/':
                 return divide(reduce(first.numerator, first.denominator), reduce(second.numerator, second.denominator))
         except:
