@@ -1,4 +1,10 @@
 from fractions import Fraction
+import sys
+
+
+if sys.version_info[0] < 3:
+    print("You need to run this program in python 3")
+    sys.exit(1)
 
 
 def add(x, y):
