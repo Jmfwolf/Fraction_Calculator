@@ -22,10 +22,10 @@ Begin test: python calculator_test.py
 
 ## Setup
 Begin in the same directory as the file
-1. Start: python calculator.py
-2. The program begins with the ? on console
-3.
-  a. Enter a number in: whole_numerator/denominator. e.g. "3_1/4" 
-  b. Enter operand: \*, /, +, - (multiply, divide, add, subtract)
-  c. Enter second number in the same format as the first
-  d. The program will display: =Solution
+- Start: python calculator.py
+- The program begins with the ? on console
+- 
+  + Enter a number in: whole_numerator/denominator. e.g. "3_1/4" 
+  + Enter operand: \*, /, +, - (multiply, divide, add, subtract)
+  + Enter second number in the same format as the first
+  + The program will display: =Solution
