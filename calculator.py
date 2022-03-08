@@ -38,7 +38,6 @@ def parsenum(a):
     alist = a.split('_')
     if len(alist) > 2:
         raise Exception("ERROR Invalid term: " + str(a))
-        return
     if len(alist) > 1:
         temp = frac(alist[1])
         numerator = frac(alist[0]) + temp
