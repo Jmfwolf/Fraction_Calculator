@@ -2,10 +2,10 @@
 Command Line tool to perform operations on fractions as an input and produce a fractional result
 
 ## Table of Contents
--Introduction
--Technologies
--Testing
--Setup
+- Introduction
+- Technologies
+- Testing
+- Setup
 
 ## Introduction:
 This project is my first time developing in Python. The intent is to meet the requirements of the
@@ -13,7 +13,7 @@ take home interview question, while learning a new language, and managing a heav
 
 ## Technologies:
 Project Created With:
--Python 3.9
+- Python 3.9
 
 ## Testing
 The project utilizes unittest framework to test the calculator program.
