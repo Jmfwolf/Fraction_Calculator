@@ -21,6 +21,13 @@ def divide(x, y):
         return x / y
 
 
+def gcd(m, n):
+    if n == 0:
+        return m
+    else:
+        return gcd(n, m % n)
+
+
 def parsenum(a):
     alist = a.split('_')
     if len(alist) > 2:
@@ -58,16 +65,24 @@ def calculate(a, b, c):
     else:
         try:
             if b == '+':
-                return add(first, second)
+                return add(reduce(first.numerator, first.denominator), reduce(second.numerator, second.denominator))
             elif b == '-':
-                return subs(first, second)
+                return subs(reduce(first.numerator, first.denominator), reduce(second.numerator, second.denominator))
             elif b == '*':
-                return multiply(first, second)
+                return multiply(reduce(first.numerator, first.denominator), reduce(second.numerator, second.denominator))
             elif b == '/':
-                return divide(first, second)
+                return divide(reduce(first.numerator, first.denominator), reduce(second.numerator, second.denominator))
         except:
             print("Invalid operand: " + str(b))
             return
+
+
+def reduce(num, denom):
+    factor = gcd(num, denom)
+    if factor > 1:
+        num /= factor
+        denom /= factor
+    return Fraction(num, denom)
 
 
 def printresult(a):
@@ -93,4 +108,5 @@ def main():
         print("Please enter a numeric term, operand, and numeric term")
 
 
-main()
+if __name__ == "__main__":
+    main()
